@@ -28,7 +28,7 @@ body {
   left: 20%;
   z-index: 1;
   color: #333333;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional for readability */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
 }
 
 .image-subtext {
@@ -98,9 +98,9 @@ body {
 
 .user-form{
   width: 40vw;
-  background-color: rgba(120, 116, 116, 0.3); /* White with 70% opacity */
+  background-color: rgba(120, 116, 116, 0.3);
   padding: 5px;
-  border-radius: 10px; /* Optional: Adds rounded corners */
+  border-radius: 10px; 
 }
 
 .form-control{
@@ -133,4 +133,33 @@ form{
 .user-form h2{
   text-align: center;
   color: #706d6d;
+}
+
+@media (max-width: 480px) {
+  .user-form{
+    width: 90vw;
+    background-color: rgba(120, 116, 116, 0.3);
+    padding: 5px;
+    border-radius: 10px; 
+  }
+
+  .image-text {
+    font-size: 1.5rem;
+    left: 12%;
+  }
+
+  .image-subtext {
+    top: 14%;
+    left: 10%;
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .user-form{
+    width: 80vw;
+    background-color: rgba(120, 116, 116, 0.3);
+    padding: 5px;
+    border-radius: 10px; 
+  }
 }
