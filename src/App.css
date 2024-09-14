@@ -1,38 +1,136 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+
+
+
+body {
+  font-family: 'Montserrat', sans-serif; /* Use your desired font */
+  font-style: italic; /* Set to 'italic' if needed */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.login-screen{
+  margin-left: -24px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.img-section {
+  position: relative;
+}
+.experiance-img {
+  width: 100%;
+  height: 100vh;
+  border-radius: 10px 0 0 10px;
+  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.image-text {
+  position: absolute;
+  font-family: 'Parisienne', cursive;
+  top: 5%;
+  left: 20%;
+  z-index: 1;
+  color: #333333;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional for readability */
+}
+
+.image-subtext {
+  position: absolute;
+  width: 50%;
+  top: 17%;
+  left: 23%;
+  z-index: 1;
+  color: #333333;
+  font-size: 0.7rem;
+  text-align: center
+}
+
+.login-section {
+  position: relative; 
+  height: 100vh; 
+  overflow: hidden; 
+}
+
+.login-section h2{
+  color: #009EE2;
+  font-weight: 700;
+}
+
+.login-section p{
+  color: #737070;
+}
+
+.login-section .pass-text{
+  color: #737070;
+}
+
+.login-section .login-btn{
+  background-color: #009EE2;
+}
+
+.login-section .taj-mahal{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40%;
+  
+}
+
+.login-section .leaning-tower{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 40%;
+}
+
+.check-screen{
+  height: 100vh;
+}
+
+.user-form-container{
+  background-image: url('./assets/Images/form-background.jpg');
+  background-size: cover; 
+  height: 100vh; 
+  width: 100%; 
+}
+
+.user-form label{
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+.user-form{
+  width: 40vw;
+  background-color: rgba(120, 116, 116, 0.3); /* White with 70% opacity */
+  padding: 5px;
+  border-radius: 10px; /* Optional: Adds rounded corners */
+}
+
+.form-control{
+  padding: 2px;
+  padding-left: 10px;
+  
+}
+.form-control:focus{
+  box-shadow: none;
+}
+form{
+  width: 75%;
+}
+
+.submit-btn{
+  background-color: #009EE2;
+  align-content: center;
+  padding: auto;
+  border-radius: 5px;
+  border: solid 0.1px darkblue;
+}
+
+.submit-div{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  margin-top: 5px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.user-form h2{
+  text-align: center;
+  color: #706d6d;
 }
